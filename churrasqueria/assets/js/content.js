@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 class="map-title">Nuestra Ubicación</h3>
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7191863534657!2d-57.63580892377478!3d-25.28160273138793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da5d8e8e0e8e1%3A0x1234567890abcdef!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1ses!2s!4v1234567890123!5m2!1ses!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.1948636496949!2d-55.69795566865713!3d-25.378707002776906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945f436ee1cc7c5b%3A0x2fb05b19b2500c11!2sChurrasqueria%20Alff!5e0!3m2!1sde!2spy!4v1768917246082!5m2!1sde!2spy"
                     width="100%" 
                     height="400" 
                     style="border:0;" 
