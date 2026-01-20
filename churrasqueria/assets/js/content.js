@@ -109,34 +109,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>
             </div>
         </div>
-        <div class="contact-form-wrapper">
-            <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="guests">Número de personas</label>
-                    <input type="number" id="guests" name="guests" min="1" max="20">
-                </div>
-                <div class="form-group">
-                    <label for="date">Fecha de reserva</label>
-                    <input type="date" id="date" name="date">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Reserva</button>
-            </form>
+        <div class="contact-map-wrapper">
+            <h3 class="map-title">Nuestra Ubicación</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7191863534657!2d-57.63580892377478!3d-25.28160273138793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da5d8e8e0e8e1%3A0x1234567890abcdef!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1ses!2s!4v1234567890123!5m2!1ses!2s"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="map-note">📍 Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
         </div>
     `;
     
@@ -153,15 +139,4 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <p class="footer-text">${SITE_CONFIG.footer.copyright}</p>
     `;
-    
-    // Form handler
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        console.log('Reservation submitted:', data);
-        alert('¡Gracias por su reserva! Le contactaremos pronto para confirmar.');
-        contactForm.reset();
-    });
 });

@@ -1018,3 +1018,43 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+/* Map Container Styles */
+.contact-map-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.map-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+.map-note {
+    text-align: center;
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
