@@ -16,19 +16,19 @@ const SITE_CONFIG = {
 
     hero: [
         {
-            image: 'hotel2.jpg',
+            image: 'assets/images/hotel2.jpg',
             title: 'Bienvenido a Hotel Alff',
             subtitle: 'Donde la comodidad se encuentra con la hospitalidad',
             cta: { text: 'Reservar Habitación', href: '#booking' }
         },
         {
-            image: 'hotel3.jpg',
+            image: 'assets/images/hotel3.jpg',
             title: 'Confort y Elegancia',
             subtitle: 'Habitaciones diseñadas para su descanso perfecto',
             cta: { text: 'Ver Habitaciones', href: '#rooms' }
         },
         {
-            image: 'hotel4.jpg',
+            image: 'assets/images/hotel4.jpg',
             title: 'Experiencia Única',
             subtitle: 'Un lugar donde crear memorias inolvidables',
             cta: { text: 'Contáctenos', href: '#contact' }
@@ -55,7 +55,7 @@ const SITE_CONFIG = {
 
     about: {
         title: 'Nuestra Historia',
-        image: 'hotel2.jpg',
+        image: 'assets/images/hotel2.jpg',
         paragraphs: [
             'Hotel Alff es un establecimiento familiar con años de tradición en hospitalidad. Nos enorgullecemos de ofrecer un ambiente acogedor que combina la calidez del servicio personalizado con las comodidades modernas que nuestros huéspedes esperan.',
             'Cada detalle de nuestro hotel ha sido cuidadosamente pensado para proporcionar una experiencia memorable, ya sea que nos visite por negocios o placer.'
@@ -65,21 +65,21 @@ const SITE_CONFIG = {
 
     rooms: [
         {
-            image: 'hotel3.jpg',
+            image: 'assets/images/hotel3.jpg',
             title: 'Habitación Estándar',
             badge: 'Popular',
             description: 'Acogedora habitación con todas las comodidades básicas para una estadía confortable',
             features: ['Wi-Fi gratuito', 'Aire acondicionado', 'TV por cable', 'Baño privado']
         },
         {
-            image: 'hotel4.jpg',
+            image: 'assets/images/hotel4.jpg',
             title: 'Habitación Superior',
             badge: null,
             description: 'Más espacio y comodidades premium para una experiencia superior',
             features: ['Todo lo de estándar', 'Minibar', 'Escritorio de trabajo', 'Caja de seguridad']
         },
         {
-            image: 'hotel2.jpg',
+            image: 'assets/images/hotel2.jpg',
             title: 'Suite',
             badge: 'Premium',
             description: 'Nuestra opción más lujosa con sala de estar separada',
