@@ -55,7 +55,7 @@ const SITE_CONFIG = {
 
     about: {
         title: 'Nuestra Historia',
-        image: 'assets/images/hotel2.jpg',
+        image: 'assets/images/Hotel.webp',
         paragraphs: [
             'Hotel Alff es un establecimiento familiar con años de tradición en hospitalidad. Nos enorgullecemos de ofrecer un ambiente acogedor que combina la calidez del servicio personalizado con las comodidades modernas que nuestros huéspedes esperan.',
             'Cada detalle de nuestro hotel ha sido cuidadosamente pensado para proporcionar una experiencia memorable, ya sea que nos visite por negocios o placer.'
@@ -65,21 +65,21 @@ const SITE_CONFIG = {
 
     rooms: [
         {
-            image: 'assets/images/hotel3.jpg',
+            image: 'assets/images/Standart.jpg',
             title: 'Habitación Estándar',
             badge: 'Popular',
             description: 'Acogedora habitación con todas las comodidades básicas para una estadía confortable',
             features: ['Wi-Fi gratuito', 'Aire acondicionado', 'TV por cable', 'Baño privado']
         },
         {
-            image: 'assets/images/hotel4.jpg',
+            image: 'assets/images/Superior.jpg',
             title: 'Habitación Superior',
             badge: null,
             description: 'Más espacio y comodidades premium para una experiencia superior',
             features: ['Todo lo de estándar', 'Minibar', 'Escritorio de trabajo', 'Caja de seguridad']
         },
         {
-            image: 'assets/images/hotel2.jpg',
+            image: 'assets/images/Suite.jpg',
             title: 'Suite',
             badge: 'Premium',
             description: 'Nuestra opción más lujosa con sala de estar separada',
