@@ -105,26 +105,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>
             </div>
         </div>
-        <div class="contact-form-wrapper">
-            <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Mensaje</button>
-            </form>
+        <div class="contact-map-wrapper">
+            <h3 class="map-title">Nuestra Ubicación</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.1864037200378!2d-55.699019938686305!3d-25.37984080066612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945f436ee2edeae1%3A0x410ebcd5f3538687!2sHotel%20Alff!5e0!3m2!1sde!2spy!4v1768917187347!5m2!1sde!2spy"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="map-note">📍 Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
         </div>
     `;
     
@@ -138,15 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <p class="footer-text">${SITE_CONFIG.footer.copyright}</p>
     `;
-    
-    // Form handler
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        console.log('Form submitted:', data);
-        alert('¡Gracias por contactarnos! Le responderemos pronto.');
-        contactForm.reset();
-    });
 });

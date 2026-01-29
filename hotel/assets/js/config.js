@@ -11,7 +11,7 @@ const SITE_CONFIG = {
         { label: 'Habitaciones', href: '#rooms' },
         { label: 'Servicios', href: '#amenities' },
         { label: 'Contacto', href: '#contact' },
-        { label: 'Reservar', href: '#booking', class: 'btn-nav' }
+        { label: 'Churrasqueria', href: '../churrasqueria/', class: 'btn-nav' }
     ],
 
     hero: [

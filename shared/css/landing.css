@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: url('https://www.alff.com.py/img/bg.jpg') repeat;
+    background-color: #3e2723;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.landing-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.choice-card {
+    position: relative;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.choice-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.churrasqueria-card {
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+}
+
+.hotel-card {
+    background: linear-gradient(135deg, #654321 0%, #3e2723 100%);
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('https://www.alff.com.py/img/bg.jpg') repeat;
+    opacity: 0.15;
+    mix-blend-mode: overlay;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.churrasqueria-card .logo-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-flourish-left,
+.logo-flourish-right {
+    font-size: 3rem;
+    color: #D4AF37;
+    opacity: 0.8;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    border-top: 2px solid #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+    padding: 8px 20px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.logo-text-small {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.logo-stars {
+    font-size: 1.8rem;
+    color: #D4AF37;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+.logo-flourish {
+    font-size: 2rem;
+    color: #D4AF37;
+    letter-spacing: 10px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .choice-grid {
+        gap: 30px;
+    }
+    
+    .choice-card {
+        height: 400px;
+    }
+    
+    .brand {
+        font-size: 4rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+    .churrasqueria-card .logo-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-flourish-left,
+    .logo-flourish-right {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice-card {
+        height: 350px;
+    }
+    
+    .brand {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+}

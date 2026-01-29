@@ -100,9 +100,38 @@ a {
 
 .logo {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-text-group {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Playfair Display', serif;
+}
+
+.logo-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    border-top: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding: 2px 10px;
+    margin-top: 2px;
+}
+
+.logo-tagline {
+    font-size: 0.6rem;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+.logo-flourish-left,
+.logo-flourish-right {
+    font-size: 2rem;
+    color: var(--accent-color);
 }
 
 .logo-text {
@@ -847,5 +876,188 @@ a {
     * {
         animation: none !important;
         transition: none !important;
+    }
+}
+
+/* Churrasqueria-specific styles */
+.card-icon-emoji {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.btn-nav-alt {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-nav-alt:hover {
+    background: #c5a032;
+    transform: translateY(-2px);
+}
+
+.menu-section,
+.drinks-section {
+    padding: 80px 0;
+    background: rgba(245, 245, 220, 0.95);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.item-price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.item-description {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.drink-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.drink-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.drink-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hours-notice {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+
+.schedule-item {
+    margin: 0.75rem 0;
+    font-size: 1.05rem;
+}
+
+.schedule-item strong {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .logo-flourish-left,
+    .logo-flourish-right {
+        font-size: 1.5rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Map Container Styles */
+.contact-map-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.map-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
+.map-note {
+    text-align: center;
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+    .map-container iframe {
+        height: 300px;
     }
 }
