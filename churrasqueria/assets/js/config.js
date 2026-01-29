@@ -38,17 +38,17 @@ const SITE_CONFIG = {
 
     welcome: [
         {
-            icon: '🥩',
+            icon: `<span class="material-symbols-outlined" aria-hidden="true">outdoor_grill</span>`,
             title: 'Carne Premium',
             description: 'Los mejores cortes seleccionados para tu disfrute'
         },
         {
-            icon: '🔥',
+            icon: `<span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>`,
             title: 'Asado Tradicional',
             description: 'Preparado a la parrilla con técnicas artesanales'
         },
         {
-            icon: '👨‍🍳',
+            icon: `<span class="material-symbols-outlined" aria-hidden="true">restaurant_menu</span>`,
             title: 'Chefs Expertos',
             description: 'Años de experiencia en el arte del asado'
         }
@@ -95,14 +95,14 @@ const SITE_CONFIG = {
     ],
 
     drinks: [
-        { icon: '🍺', title: 'Cervezas', description: 'Nacionales e importadas' },
-        { icon: '🍷', title: 'Vinos', description: 'Selección de tintos y blancos' },
-        { icon: '🥤', title: 'Refrescos', description: 'Bebidas sin alcohol' },
-        { icon: '☕', title: 'Café', description: 'Expreso y capuccino' }
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">sports_bar</span>`, title: 'Cervezas', description: 'Nacionales e importadas' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">wine_bar</span>`, title: 'Vinos', description: 'Selección de tintos y blancos' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">local_drink</span>`, title: 'Refrescos', description: 'Bebidas sin alcohol' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">local_cafe</span>`, title: 'Café', description: 'Expreso y capuccino' }
     ],
 
     hours: {
-        icon: '🕐',
+        icon: `<span class="material-symbols-outlined" aria-hidden="true">schedule</span>`,
         title: 'Horarios',
         schedule: [
             { day: 'Desayuno', time: 'Buffet con platos, dulces, frutas, churrrasqueria, café, etc.' },

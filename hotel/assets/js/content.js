@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <p class="map-note">📍 Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
+            <p class="map-note"><span class="material-symbols-outlined map-note-icon" aria-hidden="true">location_on</span> Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
         </div>
     `;
     
@@ -128,7 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="footer-logo">
             <span class="logo-text">HOTEL</span>
             <span class="logo-name">ALFF</span>
-            <span class="logo-stars">★★★</span>
+            <span class="logo-stars" aria-label="Hotel de 3 estrellas">
+                <span class="material-symbols-outlined" aria-hidden="true">grade</span>
+                <span class="material-symbols-outlined" aria-hidden="true">grade</span>
+                <span class="material-symbols-outlined" aria-hidden="true">grade</span>
+            </span>
         </div>
         <p class="footer-text">${SITE_CONFIG.footer.copyright}</p>
     `;

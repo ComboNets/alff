@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <p class="map-note">📍 Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
+            <p class="map-note"><span class="material-symbols-outlined map-note-icon" aria-hidden="true">location_on</span> Visítenos en nuestra ubicación. Haga clic en el mapa para obtener direcciones.</p>
         </div>
     `;
     
@@ -130,12 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerContent = document.getElementById('footer-content');
     footerContent.innerHTML = `
         <div class="footer-logo">
-            <span class="logo-flourish-left">❦</span>
+            <span class="logo-flourish-left material-symbols-outlined" aria-hidden="true">restaurant</span>
             <div class="logo-text-group">
                 <span class="logo-name">Alff</span>
                 <span class="logo-subtitle">CHURRASQUERIA</span>
             </div>
-            <span class="logo-flourish-right">❦</span>
+            <span class="logo-flourish-right material-symbols-outlined" aria-hidden="true">restaurant</span>
         </div>
         <p class="footer-text">${SITE_CONFIG.footer.copyright}</p>
     `;

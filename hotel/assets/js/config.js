@@ -88,16 +88,16 @@ const SITE_CONFIG = {
     ],
 
     amenities: [
-        { icon: '📶', title: 'Wi-Fi Gratuito', description: 'Internet de alta velocidad en todo el hotel' },
-        { icon: '🅿️', title: 'Estacionamiento', description: 'Estacionamiento seguro y gratuito' },
-        { icon: '🍽️', title: 'Restaurante', description: 'Churrasquería Alff en el mismo local' },
-        { icon: '🏪', title: 'Recepción 24/7', description: 'Atención las 24 horas del día' },
-        { icon: '🧹', title: 'Limpieza Diaria', description: 'Servicio de limpieza todos los días' },
-        { icon: '❄️', title: 'Aire Acondicionado', description: 'Todas las habitaciones climatizadas' }
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">wifi</span>`, title: 'Wi-Fi Gratuito', description: 'Internet de alta velocidad en todo el hotel' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">local_parking</span>`, title: 'Estacionamiento', description: 'Estacionamiento seguro y gratuito' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">restaurant</span>`, title: 'Restaurante', description: 'Churrasquería Alff en el mismo local' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">support_agent</span>`, title: 'Recepción 24/7', description: 'Atención las 24 horas del día' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">cleaning_services</span>`, title: 'Limpieza Diaria', description: 'Servicio de limpieza todos los días' },
+        { icon: `<span class="material-symbols-outlined" aria-hidden="true">ac_unit</span>`, title: 'Aire Acondicionado', description: 'Todas las habitaciones climatizadas' }
     ],
 
     notice: {
-        icon: '⏰',
+        icon: `<span class="material-symbols-outlined" aria-hidden="true">alarm</span>`,
         title: 'Importante',
         text: 'Para llegadas posteriores a las 23:00 se requiere reserva con antelación',
         cta: { text: 'Hacer Reserva', href: '#contact' }
