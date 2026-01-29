@@ -56,7 +56,7 @@ const SITE_CONFIG = {
 
     about: {
         title: 'Nuestra Historia',
-        image: 'https://via.placeholder.com/600x400/8B4513/FFFFFF?text=Historia+Alff',
+        image: 'churrasqueria/assets/images/Menu.jpg',
         paragraphs: [
             'Desde 1996, Churrasqueria Alff ha sido sinónimo de calidad y tradición en asados. Nuestra pasión por la buena carne y el servicio excepcional nos ha convertido en un referente en Paraguay.',
             'Cada corte es seleccionado cuidadosamente y preparado con técnicas tradicionales que resaltan el sabor auténtico de la carne. Nuestro compromiso es ofrecer la mejor experiencia gastronómica en cada visita.'
