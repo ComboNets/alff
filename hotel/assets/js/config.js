@@ -16,19 +16,19 @@ const SITE_CONFIG = {
 
     hero: [
         {
-            image: 'assets/images/hotel2.jpg',
+            image: 'assets/images/Hotel.webp',
             title: 'Bienvenido a Hotel Alff',
             subtitle: 'Donde la comodidad se encuentra con la hospitalidad',
             cta: { text: 'Reservar Habitación', href: '#booking' }
         },
         {
-            image: 'assets/images/hotel3.jpg',
+            image: 'assets/images/Superior.jpg',
             title: 'Confort y Elegancia',
             subtitle: 'Habitaciones diseñadas para su descanso perfecto',
             cta: { text: 'Ver Habitaciones', href: '#rooms' }
         },
         {
-            image: 'assets/images/hotel4.jpg',
+            image: 'assets/images/Suite.jpg',
             title: 'Experiencia Única',
             subtitle: 'Un lugar donde crear memorias inolvidables',
             cta: { text: 'Contáctenos', href: '#contact' }
